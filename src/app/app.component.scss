@@ -1,0 +1,27 @@
+$break-small: 676px;
+$break-large: 1200px;
+
+h1{
+  color : red
+}
+
+body{
+  /*  background-color: rgba(0,0,0,.1);*/
+  background-image: url("/assets/images/bckg.jpg");
+  @media screen and (max-width: $break-small) {
+    background-image: url("/assets/images/bckg.jpg");
+  }
+}
+
+
+.card{
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  @media screen and (max-width: $break-small) {
+    width:57%;
+    height: 50%;
+    font-size: 10px;
+  }
+}

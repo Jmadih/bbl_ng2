@@ -1,8 +1,11 @@
 {
   "name": "bbl-ng2",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "angular-cli": {},
+  "authors": [
+    "Jaafar MADIH <jaafar.madih@soprasteria.com>"
+  ],
   "scripts": {
     "start": "ng serve",
     "lint": "tslint \"src/**/*.ts\"",
@@ -19,6 +22,17 @@
     "@angular/http": "~2.1.0",
     "@angular/platform-browser": "~2.1.0",
     "@angular/platform-browser-dynamic": "~2.1.0",
+    "@angular2-material/button": "^2.0.0-alpha.8-2",
+    "@angular2-material/card": "^2.0.0-alpha.8-2",
+    "@angular2-material/checkbox": "2.0.0-alpha.8-2",
+    "@angular2-material/core": "^2.0.0-alpha.8-2",
+    "@angular2-material/input": "^2.0.0-alpha.8-2",
+    "@angular2-material/menu": "^2.0.0-alpha.8-2",
+    "@angular2-material/progress-bar": "^2.0.0-alpha.8-2",
+    "@angular2-material/sidenav": "^2.0.0-alpha.8-2",
+    "@angular2-material/slider": "^2.0.0-alpha.8-2",
+    "@angular2-material/tabs": "^2.0.0-alpha.8-2",
+    "@types/hammerjs": "^2.0.33",
     "@angular/router": "~3.1.0",
     "core-js": "^2.4.1",
     "rxjs": "5.0.0-beta.12",
