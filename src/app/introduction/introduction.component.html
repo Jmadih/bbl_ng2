@@ -1,0 +1,22 @@
+<div class="parentCardsI">
+  <div class="card">
+    <md-card>
+      <img class="introImg" md-card-image src="/assets/images/user.png">
+      <div class="divIntro">
+        <md-card-content>
+          <p>{{introduction.firstname}} {{introduction.lastname}}</p>
+          <p>{{introduction.email}}</p>
+          <p *ngIf="introduction.status"> Available</p>
+          <p *ngIf="!introduction.status"> Unvailable</p>
+        </md-card-content>
+        <md-card-actions>
+          <img *ngFor="let link of introduction.links" md-card-avatar [src]="link.imgUrl" href="{link.url}"/>
+        </md-card-actions>
+      </div>
+      <p class="description">
+        {{introduction.description}}
+      </p>
+      <button md-button (click)="showDialog()" color="primary">EDIT</button>
+    </md-card>
+  </div>
+</div>
