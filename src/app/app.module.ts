@@ -6,6 +6,8 @@ import {CoreModule} from "./core/core.module";
 import {LayoutModule} from "./layout/layout.module";
 import {SharedModule} from "./shared/shared.module";
 import { SkillsComponent } from './skills/skills.component';
+import {SkillsResolve} from "./skills/skills.resolve";
+import {SkillsService} from "./skills/skills.service";
 
 
 @NgModule({
@@ -19,7 +21,7 @@ import { SkillsComponent } from './skills/skills.component';
     SharedModule,
     LayoutModule
   ],
-  providers: [],
+  providers: [SkillsService, SkillsResolve],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
