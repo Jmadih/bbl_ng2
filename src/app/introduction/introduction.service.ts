@@ -1,0 +1,19 @@
+import { Injectable } from '@angular/core';
+import {Http} from "@angular/http";
+import {BASE_URL} from "../shared/constants";
+
+@Injectable()
+export class IntroductionService {
+
+  constructor(private _http : Http) { }
+
+  get(){
+    return this._http.get(`${BASE_URL}/api/intro`)
+      .map( res => res.json() );
+  }
+
+  update(form){
+    return this._http.put(`${BASE_URL}/api/intro`, form)
+      .map( res => res.json() );
+  }
+}
