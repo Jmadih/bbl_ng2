@@ -1,23 +1,4 @@
-<div class="parentCards">
-  <div class="cards">
-    <br>
-    <img class="skicon" src="/assets/images/skills.jpg" />
-    <br>
-    <br>
-    <div *ngFor="let skill of skills">
-      <md-card>
-        <img md-card-avatar [src]="skill._img">
-        <md-card-subtitle>{{skill._title}}</md-card-subtitle>
-        <md-card-content>
-          Exp : <md-progress-bar class="progBar" mode="determinate"  [value]="skill._score" color="accent"></md-progress-bar>{{skill._score}}%
-        </md-card-content>
-        <md-card-actions>
-          <button md-button (click)="edit(skill.$key, skill)" color="primary">EDIT</button>
-          <button md-button (click)="delete(skill.$key)" color="black" [disabled]="lock">DELETE</button>
-        </md-card-actions>
-      </md-card>
-      <br/>
-    </div>
-  </div>
-  <button md-raised-button (click)=" generateSkill()">Generate a card</button>
-</div>
+<p>
+  skills works!
+  {{skills[0]| json}}
+</p>
