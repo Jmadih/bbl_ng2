@@ -8,7 +8,7 @@
       <md-card>
         <md-card-subtitle>{{skill._title}}</md-card-subtitle>
         <img md-card-avatar [src]="skill._img">
-        <img md-card-avatar *ngIf="skill._score > 90" [src]="special">
+        <img md-card-avatar *ngIf="skill._score > 90" [src]="'assets/images/star.png'">
         <md-card-content>
           Exp : <md-progress-bar class="progBar" mode="determinate"  [value]="skill._score" color="accent"></md-progress-bar>{{skill._score}}%
         </md-card-content>

@@ -12,19 +12,20 @@ import {ActivatedRoute} from "@angular/router";
 export class SkillsComponent implements OnInit {
 
   skills : Observable<Skills[]>;
-  special : string = "assets/images/star.png";
+  ngVersion : number;
 
   constructor(private _service : SkillsService, private _route: ActivatedRoute) { }
 
   ngOnInit() {
     this.skills = this._route.snapshot.data['skills'];
+    this.ngVersion = 1;
   }
 
   generateSkill(){
     let id = new Date().getTime()+"";
-    let title =  "Angular 1";
-    let score = 80;
-    let img = "/assets/images/ng1.png";
+    let title =  "Angular "+ (++this.ngVersion);
+    let score = 95;
+    let img = "/assets/images/ng2.svg";
     let skill : Skills = new Skills();
     skill.id = id;
     skill.title = title;
