@@ -5,14 +5,12 @@ import {IntroductionComponent } from './introduction/introduction.component';
 import {CoreModule} from "./core/core.module";
 import {LayoutModule} from "./layout/layout.module";
 import {SharedModule} from "./shared/shared.module";
-import { SkillsComponent } from './skills/skills.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    IntroductionComponent,
-    SkillsComponent
+    IntroductionComponent
   ],
   imports: [
     CoreModule,
