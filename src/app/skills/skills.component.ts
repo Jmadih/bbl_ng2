@@ -24,7 +24,7 @@ export class SkillsComponent implements OnInit {
   generateSkill(){
     let id = new Date().getTime()+"";
     let title =  "Angular "+ (++this.ngVersion);
-    let score = 95;
+    let score = null;
     let img = "/assets/images/ng2.svg";
     let skill : Skills = new Skills();
     skill.id = id;

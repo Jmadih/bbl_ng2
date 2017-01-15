@@ -10,7 +10,7 @@
         <img md-card-avatar [src]="skill._img">
         <span super-skill [score]="skill._score"></span>
         <md-card-content>
-          Exp : <md-progress-bar class="progBar" mode="determinate"  [value]="skill._score" color="accent"></md-progress-bar>{{skill._score}}%
+          Exp : <md-progress-bar class="progBar" mode="determinate"  [value]="skill._score" color="accent"></md-progress-bar>{{skill._score | undefined}}%
         </md-card-content>
         <md-card-actions>
           <button md-button (click)="edit(skill.$key, skill)" color="primary">EDIT</button>
