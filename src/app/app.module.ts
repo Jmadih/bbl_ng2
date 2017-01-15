@@ -8,13 +8,15 @@ import {SharedModule} from "./shared/shared.module";
 import { SkillsComponent } from './skills/skills.component';
 import {SkillsResolve} from "./skills/skills.resolve";
 import {SkillsService} from "./skills/skills.service";
+import {SuperSkillDirective} from "./skills/superSkill.directive";
 
 
 @NgModule({
   declarations: [
     AppComponent,
     IntroductionComponent,
-    SkillsComponent
+    SkillsComponent,
+    SuperSkillDirective
   ],
   imports: [
     CoreModule,
