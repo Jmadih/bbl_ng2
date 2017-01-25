@@ -3,7 +3,6 @@ import {NgModule} from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MdModule } from './md.module';
-import {AppRoutingModule} from "../app.routing";
 
 @NgModule({
   providers: [],
@@ -11,8 +10,7 @@ import {AppRoutingModule} from "../app.routing";
     BrowserModule,
     ReactiveFormsModule,
     HttpModule,
-    MdModule,
-    AppRoutingModule
+    MdModule
   ]
 })
 export class CoreModule { }

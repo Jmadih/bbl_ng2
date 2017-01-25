@@ -8,6 +8,8 @@ import {SharedModule} from "./shared/shared.module";
 import { SkillsComponent } from './skills/skills.component';
 import {SkillsResolve} from "./skills/skills.resolve";
 import {SkillsService} from "./skills/skills.service";
+import {AboutModule} from "./about/about.module";
+import {AppRouting} from "./app.routing";
 
 
 @NgModule({
@@ -19,9 +21,19 @@ import {SkillsService} from "./skills/skills.service";
   imports: [
     CoreModule,
     SharedModule,
-    LayoutModule
+    LayoutModule,
+    AppRouting,
+    AboutModule
   ],
-  providers: [SkillsService, SkillsResolve],
+  providers: [
+    SkillsService,
+    SkillsResolve,
+    { provide: 'CanAlwaysActivateGuard',
+      useValue: () => {
+        return true;
+      }
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
