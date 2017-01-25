@@ -30,14 +30,6 @@ app.get('/api/intro', api.getIntro);
 app.put('/api/intro', api.updateIntro);
 
 /**
- *  Experiences
- */
-app.get('/api/exp', api.getExp);
-app.put('/api/exp/:id',api.updateExp);
-app.post('/api/exp', api.addExp);
-app.delete('/api/exp/:id', api.deleteExp);
-
-/**
  *  Skills
  */
 app.get('/api/skills', api.getSkills);
@@ -45,13 +37,6 @@ app.put('/api/skills/:id', api.updateSkill);
 app.post('/api/skills', api.addSkill);
 app.delete('/api/skills/:id', api.deleteSkill);
 
-/**
- * Education
- */
-app.get('/api/educ',api.getEduc);
-app.put('/api/educ/:id',api.updateEduc);
-app.post('/api/educ',api.addEducation);
-app.delete('/api/educ/:id',api.deleteEducation);
 
 app.listen(app.get('port'), function () {
   console.log('✔Express server listening on http://localhost:%d/', app.get('port'));
