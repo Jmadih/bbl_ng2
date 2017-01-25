@@ -1,6 +1,6 @@
 # bbl_ng2
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.18.
-It's an introduction of some concepts of angular 2 for a BBL purpose.
+It's an introduction of some concepts of angular 2 for a Brown bag lunch purpose.
 Every branch will show a concept until the last feature of Angular 2 for the BBL.
 
 # step_00
