@@ -34,6 +34,14 @@ Structuration du projet en ajoutant les élements suivants :
 
 # step_05
 
+- Attribute Directive "super-skill"
+
 # step_06
 
+- custum pipe "undefined"
+
 # step_07
+
+- composant form
+- @Input, @Output
+- CRUD on Skills with Model Driven Form
