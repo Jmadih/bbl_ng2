@@ -8,7 +8,7 @@
         gender : "M",
         email : "",
         status : "Unvailable",
-        description : "Ingénieur de formation, je suis passioné par les nouvelles technos comme AngulaJs et Spring",
+        description : "Ingénieur de formation, je suis passioné par les nouvelles technos comme Angular et Spring",
         links : [
             {imgUrl : "/assets/images/linkedin.png", url:""},
             {imgUrl : "/assets/images/github.png", url:""},
