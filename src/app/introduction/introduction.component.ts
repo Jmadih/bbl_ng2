@@ -18,7 +18,6 @@ export class IntroductionComponent implements OnInit {
 
   ngOnInit() {
     this._service.get().subscribe((introduction) => {
-      console.log(introduction);
       this.introduction = introduction;
     })
   }
