@@ -18,12 +18,13 @@ export class SkillsService {
   }
 
   update(form){
-    return this._http.put(`${BASE_URL}/api/skills`, form)
+    return this._http.put(`${BASE_URL}/api/skills/${form._id}`, form)
       .map( res => res.json() );
   }
 
-  delete(form){
-    return this._http.delete(`${BASE_URL}/api/skills`, form.id)
+  delete(id){
+    console.log(id);
+    return this._http.delete(`${BASE_URL}/api/skills/${id}`)
       .map( res => res.json() );
   }
 }

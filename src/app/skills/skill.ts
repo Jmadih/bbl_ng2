@@ -1,5 +1,5 @@
 
-export class Skills{
+export class Skill{
     private  _id : string;
     private _img: string;
     private _title: string;

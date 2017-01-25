@@ -11,6 +11,7 @@ import {SkillsService} from "./skills/skills.service";
 import {SuperSkillDirective} from "./skills/superSkill.directive";
 import {AboutModule} from "./about/about.module";
 import {AppRouting} from "./app.routing";
+import {SkillsFormComponent} from "./skills/form/form.component";
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import {AppRouting} from "./app.routing";
     AppComponent,
     IntroductionComponent,
     SkillsComponent,
+    SkillsFormComponent,
     SuperSkillDirective
   ],
   imports: [

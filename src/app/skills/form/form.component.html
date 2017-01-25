@@ -1,0 +1,28 @@
+<md-card class="md-whiteframe-2dp">
+    <md-card-title>
+        <span *ngIf="isUpdateMode">Update {{model?._school}}</span>
+        <span *ngIf="!isUpdateMode">Create new card</span>
+    </md-card-title>
+    <md-card-content>
+        <form novalidate [formGroup]="form">
+          <p *ngIf="form.hasError('error')"> ERROR !</p>
+          {{form.getError('error')}}
+            <table style="width: 100%" cellspacing="0">
+                <tr>
+                    <p>
+                        <md-input placeholder="Title" name="title" formControlName="_title"></md-input>
+                        <span style="color: red" *ngIf="!form.controls['_title'].valid"><br>Title is 2 chars min</span>
+                    </p>
+                    <p>
+                        Score : <md-slider name="score" formControlName="_score"></md-slider>
+                        {{form.value.score}}%
+                    </p>
+                </tr>
+            </table>
+        </form>
+    </md-card-content>
+    <md-card-actions align="end">
+        <button md-button type="button" (click)="cancel()">Cancel</button>
+        <button md-button color="primary" type="submit" (click)="submit(form.value)" [disabled]="!form.valid">Save</button>
+    </md-card-actions>
+</md-card>

@@ -13,12 +13,17 @@
           Exp : <md-progress-bar class="progBar" mode="determinate"  [value]="skill._score" color="accent"></md-progress-bar>{{skill._score | undefined}}%
         </md-card-content>
         <md-card-actions>
-          <button md-button (click)="edit(skill.$key, skill)" color="primary">EDIT</button>
-          <button md-button (click)="delete(skill.$key)" color="black" [disabled]="lock">DELETE</button>
+          <button md-button (click)="edit(skill)" color="primary">EDIT</button>
+          <button md-button (click)="delete(skill)" >DELETE</button>
         </md-card-actions>
       </md-card>
       <br/>
     </div>
   </div>
+  <button md-raised-button (click)="add()">Create a card</button>
   <button md-raised-button (click)=" generateSkill()">Generate a card</button>
 </div>
+
+<section class="dialog-modal" [ngClass]="{ 'active': dialogStatus == 'active' }">
+  <app-skill-form [mode]="mode" [model]="model" (submit$)="save($event)" (cancel$)="hideDialog()"></app-skill-form>
+</section>
