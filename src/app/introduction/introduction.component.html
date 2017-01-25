@@ -10,13 +10,14 @@
           <p *ngIf="!introduction?.status"> Unvailable</p>
         </md-card-content>
         <md-card-actions>
-          <img *ngFor="let link of introduction?.links" md-card-avatar [src]="link.imgUrl" href="{link.url}"/>
+          <a *ngFor="let link of introduction?.links" [href]="link.url" style="text-decoration: none">
+            <img  md-card-avatar [src]="link.imgUrl" />
+          </a>
         </md-card-actions>
       </div>
       <p class="description">
         {{introduction?.description}}
       </p>
-      <button md-button (click)="showDialog()" color="primary">EDIT</button>
     </md-card>
   </div>
 </div>

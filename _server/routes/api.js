@@ -27,7 +27,7 @@ exports.updateSkill = function (req, res) {
     console.log("Update skill: id = "+ id);
     var skill = req.body;
     var index = _.findIndex(SKILLS, function (p) {
-        return p._id === id;
+        return p.id === id;
     });
     if (index === -1) {
         return res.status(404).json({error: 'The Skill with id "' + id + '" doesn\'t exist.'});
@@ -45,6 +45,7 @@ exports.addSkill = function (req, res) {
     exp._id = createId();
     var size = SKILLS.length;
     SKILLS[size] = exp;
+    console.log("Skill added");
     return res.status(200).json(SKILLS);
 }
 

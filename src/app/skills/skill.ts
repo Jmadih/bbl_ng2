@@ -1,13 +1,14 @@
 
-export class Skills{
-    private  _id : string;
-    private _img: string;
-    private _title: string;
-    private _score: number;
+export class Skill{
 
-    constructor(){
+  private  _id : string;
+  private _img: string;
+  private _title: string;
+  private _score: number;
 
-    }
+  constructor(){
+
+  }
 
   get id(): string {
     return this._id;

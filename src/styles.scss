@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* You can add global styles to this file, and also import other style files */
+
+$break-small: 320px;
+$break-large: 1200px;
+
+.dialog-modal {
+  top: 0;
+  position: fixed;
+  margin-left: -1.5%;
+  background: rgba(0,0,0,0.5);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-basis: auto;
+  visibility: hidden;
+  color: white;
+  @media screen and (max-width: $break-small) {
+    margin-left: 40%;
+    float: none;
+    height: 50%;
+    width: 50%;
+  }
+  @media screen and (min-width: $break-large) {
+    float: right;
+  }
+}
+
+.dialog-modal.active {
+  visibility: visible;
+}
+

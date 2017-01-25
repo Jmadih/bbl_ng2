@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {IntroductionService} from "./introduction.service";
 import {Introduction} from "./introduction";
+import {IntroductionService} from "./introduction.service";
 
 @Component({
   selector: 'app-introduction',
